@@ -1,10 +1,5 @@
-import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../Components/Provider/Context";
-
+import React from 'react';
 const AboutSection = () => {
-  const { user } = useContext(AuthContext);
-  const navigate = useNavigate();
   return (
     <section className="bg-base-200 rounded-lg py-16 px-4 border my-4">
       <div className="container mx-auto text-center">
@@ -36,12 +31,6 @@ const AboutSection = () => {
           processes, and achieve unparalleled efficiency with SCC Technovision
           Inc.
         </p>
-        <button
-          onClick={() => navigate(!user ? "/Login" : "/dashboard")}
-          className="rounded-full btn btn-primary mt-7"
-        >
-          Let's Explore
-        </button>
       </div>
     </section>
   );

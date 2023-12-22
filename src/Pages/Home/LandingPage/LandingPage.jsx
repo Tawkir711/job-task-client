@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../Components/Provider/Context';
 
 const LandingPage = () => {
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
   return (
     <div
       className="hero min-h-screen"
@@ -20,9 +23,12 @@ const LandingPage = () => {
             workflow and boost productivity. Manage tasks effortlessly and stay
             organized with ease.
           </p>
-          <Link to={'/login'}>
-            <button className="btn btn-primary">Let’s Explore</button>
-          </Link>
+          <button
+            onClick={() => navigate(!user ? "/Login" : "/dashboard")}
+            className="rounded-full btn btn-primary mt-7"
+          >
+            Let's Explore
+          </button>
         </div>
       </div>
     </div>

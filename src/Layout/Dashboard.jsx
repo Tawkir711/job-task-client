@@ -8,9 +8,9 @@ const Dashboard = () => {
   const links = (
     <>
       <li className="font-semibold">
-        <NavLink to={"/dash/todo"}>
+        <NavLink to={"/dashboard/todoList"}>
           <FaTasks className="text-xl"></FaTasks>
-          <span className="hidden md:block">To-Do List</span>
+          <span className="hidden md:block">Todo List</span>
         </NavLink>
       </li>
       <li className="font-semibold">

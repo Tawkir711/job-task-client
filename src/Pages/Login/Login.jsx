@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
-  const { signIn } = useContext(AuthContext);
+  const { signIn, signInGoogle } = useContext(AuthContext);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -89,7 +89,7 @@ const Login = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <input className="btn btn-primary" type="submit" value="Login" />
+              <input className="btn btn-primary text-white" type="submit" value="Login" />
             </div>
           </form>
           <p className="text-center">

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Components/Provider/Context';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
 
@@ -27,6 +28,13 @@ const Navbar = () => {
       <li>
         <Link to={"/"}>Home</Link>
       </li>
+      {
+        user && <li>
+          <Link to={'/dashboard'}>
+          Dashboard
+          </Link>
+        </li>
+      }
       {user ? (
         disabled
       ) : (

@@ -14,8 +14,7 @@ const SignUp = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const { createUser, updateUserProfile, signInGoogle } =
-    useContext(AuthContext);
+  const { createUser, updateUserProfile, signInGoogle } = useContext(AuthContext);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -33,10 +32,11 @@ const SignUp = () => {
               reset();
               Swal.fire({
                 icon: "success",
-                title: "Done...",
-                text: "User created successfully & login now",
+                title: "Your SignUp Successfully",
+                showConfirmButton: false,
+                timer: 1500,
               });
-              navigate("/login");
+              navigate(location?.state ? location.state : "/login");
             }
         });
       })

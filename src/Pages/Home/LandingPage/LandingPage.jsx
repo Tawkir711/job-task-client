@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -19,7 +20,9 @@ const LandingPage = () => {
             workflow and boost productivity. Manage tasks effortlessly and stay
             organized with ease.
           </p>
-          <button className="btn btn-primary">Let’s Explore</button>
+          <Link to={'/login'}>
+            <button className="btn btn-primary">Let’s Explore</button>
+          </Link>
         </div>
       </div>
     </div>

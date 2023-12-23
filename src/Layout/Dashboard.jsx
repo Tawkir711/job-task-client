@@ -5,21 +5,21 @@ const Dashboard = () => {
   const links = (
     <>
       <li className="font-semibold">
-        <NavLink to={"/dashboard/todoList"}>
+        <NavLink to={"/dashboard/createTask"}>
           <FaTasks className="text-xl"></FaTasks>
+          <span className="hidden md:block">Create Task</span>
+        </NavLink>
+      </li>
+      <li className="font-semibold">
+        <NavLink to={"/dashboard/todoList"}>
+          <FaCheckCircle className="text-xl" />
           <span className="hidden md:block">Todo List</span>
         </NavLink>
       </li>
       <li className="font-semibold">
-        <NavLink to={"/dashboard/complete"}>
-          <FaCheckCircle className="text-xl" />
-          <span className="hidden md:block">Completed</span>
-        </NavLink>
-      </li>
-      <li className="font-semibold">
-        <NavLink to={"/dashboard/ongoing"}>
+        <NavLink to={"/dashboard/notification"}>
           <FaPlayCircle className="text-xl" />
-          <span className="hidden md:block">OnGoing</span>
+          <span className="hidden md:block">notifications</span>
         </NavLink>
       </li>
       <li className="font-semibold">

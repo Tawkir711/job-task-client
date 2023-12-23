@@ -6,6 +6,8 @@ import Login from "../Pages/Login/Login";
 import Dashboard from "../Layout/Dashboard";
 import TodoList from "../Pages/Dashboard/TodoList/TodoList";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import FAQ from "../Pages/FAQ/FAQ";
+import Profile from "../Pages/Dashboard/Profile/Profile";
 export const route = createBrowserRouter([
   {
     path: '/',
@@ -23,6 +25,10 @@ export const route = createBrowserRouter([
       {
         path: 'login',
         element:<Login></Login>
+      },
+      {
+        path: 'faq',
+        element:<FAQ></FAQ>
       }
     ]
   },
@@ -34,6 +40,10 @@ export const route = createBrowserRouter([
       {
         path: 'todoList',
         element:<TodoList></TodoList>
+      },
+      {
+        path: 'profile',
+        element:<Profile></Profile>
       }
     ]
   }

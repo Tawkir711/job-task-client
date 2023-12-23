@@ -3,10 +3,10 @@ const TodoList = () => {
     <div className="max-h-screen flex justify-between ml-4 shadow-xl px-8 py-10 bg-blue-400 rounded-lg w-full">
       <div>
         <h3
-          className="text-3xl font-bold bg-red-400 text-white inline shadow-2xl rounded-full px-6 py-3 text-center cursor-pointer"
+          className="text-xl font-bold bg-red-400 text-white inline shadow-2xl rounded-full px-6 py-3 text-center cursor-pointer"
           onClick={() => document.getElementById("my_modal_1").showModal()}
         >
-          +
+          Add Task +
         </h3>
         <dialog id="my_modal_1" className="modal">
           <div className="modal-box bg-white p-8 rounded-md shadow-md max-w-md mx-auto">

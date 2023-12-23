@@ -8,7 +8,6 @@ const Home = () => {
     <div>
       <LandingPage></LandingPage>
       <AboutSection></AboutSection>
-      <Footer></Footer>
     </div>
   );
 };

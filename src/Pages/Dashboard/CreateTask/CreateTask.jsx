@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import swal from "sweetalert";
 import { FaEdit } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAxiosPublic from "./../../../hooks/useAxiosPublic";
 import useTodo from "../../../hooks/useTodo";
 import { AuthContext } from "./../../../Components/Provider/Context";
@@ -94,10 +94,10 @@ const CreateTask = () => {
                     <span className="text-black">
                       Deadline: {item.deadline}
                     </span>
-                    {/* <Link to={`/edit/${item._id}`}> */}
-                    <button className="text-xl">
-                      <FaEdit></FaEdit>
-                    </button>
+                    {/* <Link to={`/taskUpdate/${item._id}`}> */}
+                      <button className="text-xl">
+                        <FaEdit></FaEdit>
+                      </button>
                     {/* </Link> */}
                   </div>
                   <button

@@ -44,21 +44,12 @@ const SignUp = () => {
   };
   const handleGoogle = () => {
     signInGoogle()
-      .then((result) => {
-        const userInfo = {
-          email: result.user?.email,
-          name: result.user?.displayName,
-        }
-        .then((res) => {
-          console.log(res.data);
-          if (userInfo) {
-            Swal.fire({
-              icon: "success",
-              title: "Your Google Sign In Successfully",
-            });
-            navigate(location?.state ? location.state : "/");
-          }
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Your Google Sign In Successfully",
         });
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         Swal.fire({
@@ -70,7 +61,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 mb-5">
       <div className="hero-content flex-col lg:flex-row ">
         <div className="text-center md:w-1/2  lg:text-left">
           <h1 className="text-5xl font-bold text-center mb-5">SignUp now</h1>

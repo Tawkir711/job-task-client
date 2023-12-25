@@ -9,7 +9,7 @@ import FAQ from "../Pages/FAQ/FAQ";
 import Profile from "../Pages/Dashboard/Profile/Profile";
 import PrivateRoute from "./PrivateRoute";
 import CreateTask from "../Pages/Dashboard/CreateTask/CreateTask";
-import TodoList from './../Pages/Dashboard/TodoList/TodoList';
+import TodoList from "./../Pages/Dashboard/TodoList/TodoList";
 import Notification from "../Pages/Dashboard/Notification/Notification";
 import AboutSection from "../Pages/Home/AboutSection/AboutSection";
 // import UpdateTask from "../Pages/Dashboard/UpdateTask/UpdateTask";
@@ -36,9 +36,9 @@ export const route = createBrowserRouter([
         element: <FAQ></FAQ>,
       },
       {
-        path: 'about',
-        element:<AboutSection></AboutSection>
-      }
+        path: "about",
+        element: <AboutSection></AboutSection>,
+      },
     ],
   },
   {
@@ -67,9 +67,9 @@ export const route = createBrowserRouter([
         element: <Notification></Notification>,
       },
       {
-        // path: "taskUpdate/:id",
+        // path: "updateTask/:id",
         // element: <UpdateTask></UpdateTask>,
-        // loader: () => fetch(``),
+        // loader: ({ params }) => fetch(`https://job-task-server-beta-two.vercel.app/task/${params.id}`),
       },
     ],
   },

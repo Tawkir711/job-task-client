@@ -22,15 +22,13 @@
 //       description,
 //       deadline,
 //       priority,
-//     };
-//     axiosPublic.patch(`/taskUpdate/${id}`, body).then((res) => {
-//       if (res.data.modifiedCount > 0) {
-//         reset();
-//         navigate("/dashboard/taskUpdate");
+//     }
+//     axiosPublic.patch(`/task/${id}`, body);
+//       if (body.data.modifiedCount > 0) {
 //         swal("Great", "Your todo task updated", "success");
 //         refetch();
 //       }
-//     });
+    
 //   };
 //   return (
 //     <div className="modal-box bg-white p-8 rounded-md shadow-md max-w-md mx-auto">

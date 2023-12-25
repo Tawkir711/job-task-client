@@ -94,7 +94,7 @@ const CreateTask = () => {
                     <span className="text-black">
                       Deadline: {item.deadline}
                     </span>
-                    {/* <Link to={`/taskUpdate/${item._id}`}> */}
+                    {/* <Link to={`/updateTask/${item._id}`}> */}
                       <button className="text-xl">
                         <FaEdit></FaEdit>
                       </button>
